@@ -14,6 +14,7 @@ from robot_interface.utilities.json_service import EnhancedJSONEncoder
 
 def _get_battery_level() -> float:
     # Return random float in the range [50, 100]
+    return datetime.now().second
     return random.randint(500, 1000) / 10.0
 
 

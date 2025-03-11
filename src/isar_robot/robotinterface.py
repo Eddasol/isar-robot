@@ -127,7 +127,7 @@ class Robot(RobotInterface):
             mqtt_queue=queue,
             telemetry_method=telemetry.get_battery_telemetry,
             topic=f"isar/{isar_id}/battery",
-            interval=30,
+            interval=1,
             retain=False,
         )
         battery_thread: Thread = Thread(
